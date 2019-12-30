@@ -1,51 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset='utf-8' />
-<title>Courses</title>
-<link rel="stylesheet" href="css/style.css" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Courses</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="courses">
+    <header>
+      <div class="container">
+        <a href="#" id="logo"><img src="img/logo-GMC-white.png"/></a>
 
-</head>
-<body>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-<div class="container">
+    <div class="banner"><h1>Courses</h1></div>
 
-<ul>
-        <li><a href="index.html" target="_blank">Home</a></li>
-        <li><a href="courses.html" target="_blank">Courses</a></li>
-        <li><a href="contact.html" target="_blank">Contact</a></li>
-</ul>
-<h1>Courses</h1>
-<h2>feedback</h2>
+    <div class="container">
+      <div id="gallery">
+        <div class="gal">
+          <img src="img/gallery1.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery2.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery3.jpg" /><button>read more</button>
+        </div>
 
-<form class="courses">
+        <div class="gal">
+          <img src="img/gallery1.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery2.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery3.jpg" /><button>read more</button>
+        </div>
 
-<button type="text">B</button>
-<button type="text">I</button>
-<button type="text">Inderline</button>
+        <div class="gal">
+          <img src="img/gallery1.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery2.jpg" /><button>read more</button>
+        </div>
+        <div class="gal">
+          <img src="img/gallery3.jpg" /><button>read more</button>
+        </div>
+      </div>
 
-<select>
-<option>20px</option>
-<option>30px</option>
-<option>40px</option>
-</select>
+      <h2>feedback</h2>
 
+      <form class="courses">
+        <button type="button" onclick="myBold()">B</button>
+        <button type="button" onclick="myStyle2()">I</button>
+        <button type="button" onclick="myStyle3()">Inderline</button>
 
-<select>
-                <option>Arial</option>
-                <option>Verdana</option>
-                <option>Geneva</option>
-                </select>
+        <select id="mySelect" onchange="mySelt1()">
+          <option value="20px">20px</option>
+          <option value="30px">30px</option>
+          <option value="40px">40px</option>
+        </select>
 
-</form>
-
-</div>
-
-
-
-</body>
-
-
-
-
+        <select id="myFont" onchange="mySelt2()">
+          <option>Arial</option>
+          <option>Verdana</option>
+          <option>Geneva</option>
+        </select>
+        <br />
+        <textarea id="feedback"></textarea>
+      </form>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
 </html>
